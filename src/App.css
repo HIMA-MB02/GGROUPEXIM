@@ -35,6 +35,10 @@ body {
   background-color: var(--secondary);
 }
 
+.page-spacing {
+  margin-top: 10vh;
+}
+
 p {
   font-family: var(--font-family-sans-serif) !important;
 }
