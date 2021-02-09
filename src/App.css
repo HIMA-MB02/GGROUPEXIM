@@ -35,8 +35,12 @@ body {
   background-color: var(--secondary);
 }
 
-.page-spacing {
+.page-spacing-top {
   margin-top: 10vh;
+}
+
+.page-spacing-bottom {
+  margin-bottom: 10vh;
 }
 
 p {

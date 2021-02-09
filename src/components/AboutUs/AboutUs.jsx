@@ -3,7 +3,7 @@ import './AboutUs.css';
 
 const AboutUs = () => {
   return (
-    <div className='page-spacing container'>
+    <div className='page-spacing-top page-spacing-bottom container'>
       <div className='row'>
         <div className='col-md-8 offset-md-2'>
           <div className='para-section'>
@@ -51,6 +51,7 @@ const AboutUs = () => {
                   />
                   <h5>Himanshu Ganapavarapu</h5>
                   <h6>Managing Director</h6>
+                  <h6>himanshu@ggroupexim.in</h6>
                 </div>
                 <div className='col-md-6 text-center'>
                   <img
@@ -62,6 +63,7 @@ const AboutUs = () => {
                   />
                   <h5>Venkataraman Ganapavarapu</h5>
                   <h6>Vice President, Finance</h6>
+                  <h6>venkat@ggrouexim.in</h6>
                 </div>
               </div>
             </div>
