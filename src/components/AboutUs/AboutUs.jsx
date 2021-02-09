@@ -20,6 +20,7 @@ const AboutUs = () => {
               Coir Pith from India.
             </p>
           </div>
+          <hr className='theme-line' />
           <div className='para-section'>
             <h3 className='para-heading'>How did we start?</h3>
             <p className='para-body'>
@@ -35,8 +36,9 @@ const AboutUs = () => {
               industry.
             </p>
           </div>
+          <hr className='theme-line' />
           <div className='para-section'>
-            <h3 className='para-heading'>Our Team</h3>
+            <h3 className='para-heading'>Founders</h3>
             <br />
             <div className='container-fluid'>
               <div className='row'>

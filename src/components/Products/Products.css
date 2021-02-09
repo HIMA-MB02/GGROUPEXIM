@@ -1,0 +1,22 @@
+.product-picture {
+    max-width: 90%;
+}
+
+.product-picture-bricks {
+    max-width: 50%;
+}
+
+.vertically-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-spacing {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.spec-table {
+    margin-bottom: 40px;
+}

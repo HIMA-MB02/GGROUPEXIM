@@ -50,6 +50,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='nav-item'>
+            <Link className={`nav-link ${isThisRouteActive(ROUTES.GALLERY)}`} to={ROUTES.GALLERY}>
+              Gallery
+            </Link>
+          </li>
+          <li className='nav-item'>
             <Link className={`nav-link ${isThisRouteActive(ROUTES.CONTACT_US)}`} to={ROUTES.CONTACT_US}>
               Contact Us
             </Link>

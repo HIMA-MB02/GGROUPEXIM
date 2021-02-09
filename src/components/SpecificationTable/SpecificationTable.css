@@ -1,0 +1,11 @@
+.table-cell {
+    border: 0.5px solid black;
+    padding: 5px;
+    font-weight: 600;
+    background-color: var(--secondary-highlight);
+}
+
+.value-cell {
+    height: 65px;
+    background-color: transparent;
+}
