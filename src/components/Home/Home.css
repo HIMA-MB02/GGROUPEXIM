@@ -1,3 +1,8 @@
+.company-name {
+    font-family: var(--font-family-sans-serif);
+    font-size: 45px !important;
+    text-transform: uppercase;
+}
 .landing-page-block {
     max-width: 20vw;
 }
@@ -15,7 +20,7 @@
 }
 
 .products-imgs {
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 @media screen and (max-width: 660px) {
     .mobile-centerize {
@@ -43,3 +48,6 @@
     border-radius: 2%;
     min-height: 200px;
 }
+
+.text-border {
+    text-shadow: 1px 0 0 var(--secondary-highlight), -1px 0 0 var(--secondary-highlight), 0 1px 0 var(--secondary-highlight), 0 -1px 0 var(--secondary-highlight), 1px 1px var(--secondary-highlight), -1px -1px 0 var(--secondary-highlight), 1px -1px 0 var(--secondary-highlight), -1px 1px 0 var(--secondary-highlight); }

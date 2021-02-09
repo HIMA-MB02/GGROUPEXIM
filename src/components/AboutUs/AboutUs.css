@@ -11,3 +11,7 @@
     font-size: 22px;
     font-weight: 500;
 }
+
+.team-picture {
+    max-width: 80%;
+}
