@@ -47,7 +47,7 @@ const AboutUs = () => {
                     className='team-picture'
                     src={
                       process.env.PUBLIC_URL +
-                      '/static_content/himanshu_pp.jpeg'
+                      '/static_content/team/himanshu_pp.jpeg'
                     }
                     alt='himanshu_pp'
                   />
@@ -59,7 +59,7 @@ const AboutUs = () => {
                   <img
                     className='team-picture'
                     src={
-                      process.env.PUBLIC_URL + '/static_content/venkat_pp.jpeg'
+                      process.env.PUBLIC_URL + '/static_content/team/venkat_pp.jpeg'
                     }
                     alt='himanshu_pp'
                   />

@@ -5,8 +5,8 @@ import './SpecificationTable.css';
 // Fibre Content
 // Sand Content
 // Expansion
-// Dimensions
-const SpecificationTable = ({ ph, ec, fibre, sand, expansion, dimensions }) => {
+// weigth
+const SpecificationTable = ({ ph, ec, fibre, sand, expansion, weight }) => {
   return (
     <div className='container-fluid'>
       <div className='row'>
@@ -53,8 +53,8 @@ const SpecificationTable = ({ ph, ec, fibre, sand, expansion, dimensions }) => {
         <div className='col-md-2 no-padding text-center'>
           <div className='container-fluid'>
             <div className='row'>
-              <div className='col-md-12 text-center table-cell'>Dimensions</div>
-              <div className='col-md-12 text-center table-cell value-cell'>{dimensions}</div>
+              <div className='col-md-12 text-center table-cell'>Weight</div>
+              <div className='col-md-12 text-center table-cell value-cell'>{weight}</div>
             </div>
           </div>
         </div>

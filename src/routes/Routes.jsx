@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home, AboutUs, Products, ContactUs } from '../components';
+import { Home, AboutUs, Products, ContactUs, Gallery } from '../components';
 import ROUTES from '../constants/route-consts';
 
 const Routes = () => {
@@ -11,6 +11,7 @@ const Routes = () => {
       <Route exact path={ROUTES.ABOUT_US.path} component={AboutUs} />
       <Route exact path={ROUTES.PRODUCTS.path} component={Products} />
       <Route exact path={ROUTES.CONTACT_US.path} component={ContactUs} />
+      <Route exact path={ROUTES.GALLERY.path} component={Gallery} />
     </Switch>
   );
 };
