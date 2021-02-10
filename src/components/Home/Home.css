@@ -4,15 +4,15 @@
     text-transform: uppercase;
 }
 .landing-page-block {
-    max-width: 20vw;
+    max-width: 60%;
 }
 
 .landing-page-brick {
-    max-width: 10vw;
+    max-width: 30%;
 }
 
 .landing-page-slab {
-    max-width: 35vw;
+    min-width: 80%;
 }
 
 .typing-text {
@@ -46,5 +46,5 @@
 .button-parent {
     overflow: hidden;
     border-radius: 2%;
-    min-height: 200px;
+    min-height: 250px;
 }
