@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <div className='container-fluid'>
       <div className='row'>
-        <div className='col-md-6 offset-md-3'>
+        <div className='col-md-8 offset-md-2'>
           <div className='container-fluid page-spacing-top page-spacing-bottom'>
             <div className='row'>
               <div className='col-12 contact-spacing text-center'>

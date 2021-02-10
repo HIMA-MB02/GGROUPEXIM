@@ -9,7 +9,7 @@ const Products = () => {
       id='products-page'
     >
       <div className='row'>
-        <div className='col-md-6 offset-md-3 no-padding'>
+        <div className='col-md-8 offset-md-2'>
           <div className='container-fluid'>
             {/* COIR PITH BLOCK */}
             <div className='row section-spacing'>

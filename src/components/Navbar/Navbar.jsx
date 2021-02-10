@@ -28,7 +28,11 @@ const Navbar = () => {
     <nav className='navbar navbar-expand-lg navbar-light'>
       <Link className='navbar-brand no-margin' to={ROUTES.HOME.path}>
         <img className='landing-page-logo-brand' src={process.env.PUBLIC_URL + '/static_content/logo-ggroup.gif'} alt='company_logo' /> 
-      </Link>
+        
+        </Link>
+
+        <h2 className='current-path-display-mobile'>{getCurrentRouteName()}</h2>
+
       <button
         className='navbar-toggler'
         type='button'
@@ -37,7 +41,7 @@ const Navbar = () => {
         aria-controls='navbarColor01'
         aria-expanded='false'
         aria-label='Toggle navigation'
-      >
+        >
         <span className='navbar-toggler-icon'></span>
       </button>
 

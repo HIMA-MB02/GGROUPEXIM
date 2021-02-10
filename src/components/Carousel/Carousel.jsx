@@ -15,7 +15,7 @@ const Carousel = ({ arrayOfImages }) => {
       ));
     };
   return (
-    <div id='myCarousel' class='carousel slide double-border' data-ride='carousel'>
+    <div id='myCarousel' class='carousel slide double-border' data-ride='carousel' data-interval='2500'>
       <ol class='carousel-indicators'>
         <li data-target='#myCarousel' data-slide-to='0' class='active'></li>
         {mapCarouselIndicators()}
@@ -24,8 +24,8 @@ const Carousel = ({ arrayOfImages }) => {
       <div class='carousel-inner'>
         <div class='carousel-item active'>
           <img
-            src='https://www.w3schools.com/bootstrap/chicago.jpg'
-            alt='Chicago'
+            src={process.env.PUBLIC_URL + '/static_content/carousel/7.jpeg'}
+            alt='loading_truck'
             style={{ width: '100%' }}
           />
         </div>

@@ -6,7 +6,7 @@ nav {
     text-align: center;
     font-weight: 900;
     font-size: 20px;
-    padding: 20px !important;
+    padding: 15px !important;
     margin-left: 2px;
 }
 
@@ -35,9 +35,21 @@ nav {
     right: 0;
     padding-top: 10px;
     padding-right: 10px;
-    font-size: 2.75vw;
+    font-size: 2rem;
     color: var(--primary);
     font-family: var(--font-family-secondary);
+}
+
+.current-path-display-mobile {
+    visibility: hidden;
+    font-size: 5vw;
+    color: var(--primary);
+    font-family: var(--font-family-secondary);
+}
+
+.active {
+    background-color: var(--secondary-highlight);
+    color: var(--white) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -49,8 +61,10 @@ nav {
         padding: 0;
         position: relative;
     }
-}
-.active {
-    background-color: var(--secondary-highlight);
-    color: var(--white) !important;
+    .current-path-display {
+        visibility: hidden;
+    }
+    .current-path-display-mobile {
+        visibility: visible;
+    }
 }
