@@ -7,7 +7,7 @@ import './Navbar.css';
 const Navbar = () => {
   const location = useLocation();
   const isThisRouteActive = (currentRoute) => {
-    if (location.pathname === '/' && currentRoute === ROUTES.HOME) {
+    if (location.pathname === '/' && currentRoute.path === ROUTES.HOME.path) {
       return 'active';
     }
     if (currentRoute === location.pathname) {
@@ -15,9 +15,18 @@ const Navbar = () => {
     }
     return '';
   };
+  const getCurrentRouteName = () => {
+    for (const route in ROUTES) {
+      if (location.pathname === '/') return ROUTES.HOME.name;
+      if (ROUTES[route].path === location.pathname) {
+        return ROUTES[route].name;
+      }
+    }
+  };
   return (
+    <>
     <nav className='navbar navbar-expand-lg navbar-light'>
-      <Link className='navbar-brand no-margin' to={ROUTES.HOME}>
+      <Link className='navbar-brand no-margin' to={ROUTES.HOME.path}>
         <img className='landing-page-logo-brand' src={process.env.PUBLIC_URL + '/static_content/logo-ggroup.gif'} alt='company_logo' /> 
       </Link>
       <button
@@ -35,33 +44,35 @@ const Navbar = () => {
       <div className='collapse navbar-collapse' id='navbarColor01'>
         <ul className='navbar-nav ml-auto'>
           <li className='nav-item'>
-            <Link className={`nav-link ${isThisRouteActive(ROUTES.HOME)}`} to={ROUTES.HOME}>
-              Home
+            <Link className={`nav-link ${isThisRouteActive(ROUTES.HOME)}`} to={ROUTES.HOME.path}>
+            {ROUTES.HOME.name}
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className={`nav-link ${isThisRouteActive(ROUTES.ABOUT_US)}`} to={ROUTES.ABOUT_US}>
-              About Us
+            <Link className={`nav-link ${isThisRouteActive(ROUTES.ABOUT_US)}`} to={ROUTES.ABOUT_US.path}>
+              {ROUTES.ABOUT_US.name}
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className={`nav-link ${isThisRouteActive(ROUTES.PRODUCTS)}`} to={ROUTES.PRODUCTS}>
-              Products
+            <Link className={`nav-link ${isThisRouteActive(ROUTES.PRODUCTS)}`} to={ROUTES.PRODUCTS.path}>
+              {ROUTES.PRODUCTS.name}
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className={`nav-link ${isThisRouteActive(ROUTES.GALLERY)}`} to={ROUTES.GALLERY}>
-              Gallery
+            <Link className={`nav-link ${isThisRouteActive(ROUTES.GALLERY)}`} to={ROUTES.GALLERY.path}>
+              {ROUTES.GALLERY.name}
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className={`nav-link ${isThisRouteActive(ROUTES.CONTACT_US)}`} to={ROUTES.CONTACT_US}>
-              Contact Us
+            <Link className={`nav-link ${isThisRouteActive(ROUTES.CONTACT_US)}`} to={ROUTES.CONTACT_US.path}>
+              {ROUTES.CONTACT_US.name}
             </Link>
           </li>
         </ul>
       </div>
-    </nav>
+      </nav>
+      <h2 className='current-path-display'>{getCurrentRouteName()}</h2>
+      </>
   );
 };
 

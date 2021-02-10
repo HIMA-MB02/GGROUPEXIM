@@ -30,6 +30,15 @@ nav {
     color: var(--primary);
 }
 
+.current-path-display {
+    position: fixed;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 2.75vw;
+    font-family: var(--font-family-secondary);
+}
+
 @media screen and (max-width: 768px) {
     nav {
         background-color: var(--secondary);
