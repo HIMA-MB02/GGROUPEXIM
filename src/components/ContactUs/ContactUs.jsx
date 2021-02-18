@@ -29,6 +29,15 @@ const ContactUs = () => {
             <hr className='theme-line' />
             <div className='row'>
               <div className='col-12 contact-spacing'>
+                <h4 className='text-border'>Office Address</h4>
+                <p className='para-body'>
+                  #60, 1st Main, 3rd Cross, Reliable Lakedew, Haralur, Bangalore, Karnataka - 560102
+                </p>
+              </div>
+            </div>
+            <hr className='theme-line' />
+            <div className='row'>
+              <div className='col-12 contact-spacing'>
                 <h4 className='text-border'>Contact Details</h4>
                 <div className='container-fluid contact-details'>
                   <div className='row'>
