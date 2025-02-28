@@ -4,8 +4,9 @@ import { Home, AboutUs, Products, ContactUs, Gallery } from '../components';
 import ROUTES from '../constants/route-consts';
 
 const Routes = () => {
+  const basename = process.env.PUBLIC_URL;
   return (
-    <RouterRoutes>
+    <RouterRoutes basename={basename}>
       <Route path={'/'} element={<Home />} />
       <Route path={ROUTES.HOME.path} element={<Home />} />
       <Route path={ROUTES.ABOUT_US.path} element={<AboutUs />} />
